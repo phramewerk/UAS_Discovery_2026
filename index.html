@@ -17,13 +17,312 @@
 		<link rel="stylesheet" href="dist/plugin/highlight/monokai.css" />
 	</head>
 	<body>
-		<div class="reveal">
-			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
-			</div>
-		</div>
-
+     <div class="reveal">
+      <div class="slides">
+        <section>
+          <h1>A New Public Database for the Historic Environment </h1>
+          <p>John Murphy</p>
+          <p>Departmement for Communities</p>
+          <p>Historic Environment Division</p>
+        </section>
+        <section>
+          <h2>Overview</h2>
+            <ol>
+                <li>What we have</li>
+                <li>What we want</li>
+                <li>What's our plan</li>
+            </ol>
+        </section>
+        <section>
+          <p>Historic Environment Map Viewer</p>
+          <section>
+              <iframe src="https://experience.arcgis.com/experience/8bb16b64f0994385a5c141027ae9d33e" width="900" height="500" title="HED Map Viewer"></iframe>
+          </section>
+          <section>
+            <p>Site records</p>  
+          </section>
+          <section>
+            <p>Tables</p>  
+          </section>
+        </section>
+        <section>
+          <section>
+              <p>NI Buildings Database</p>
+              <iframe src="https://apps.communities-ni.gov.uk/Buildings/" width="900" height="600" title="NI Buildings"></iframe>
+          </section>
+          <section>
+              <p>NI Sites and Monuments Record</p>
+              <iframe src="https://apps.communities-ni.gov.uk/NISMR-PUBLIC/" width="900" height="600" title="NI Buildings"></iframe>
+          </section>
+          <section>
+              <p>Heritage at Risk Record</p>
+              <iframe src="https://apps.communities-ni.gov.uk/harni/" width="900" height="600" title="NI Buildings"></iframe>
+          </section>
+        </section>
+        <section>
+            <section>
+            <p>Architecture diagram</p>
+            </section>
+            <section>
+            <p>Architecture diagram</p>
+            </section>            
+        </section>
+        <section>
+              <a href="https://nihed-coral-quickview.flaxandteal.co.uk/">New public database</a>
+        </section>
+        <section>
+            <p>Structured data</p>
+            <section>
+                <pre><code data-trim data-noescape>
+(await window.alizarinAsset.asset.forJson(true)).root
+                 </code></pre>
+            </section>
+            <section>
+                <pre><code data-trim data-noescape>
+{
+    "designation_and_protection_assignment": [
+        {
+            "designation_or_protection_type": {
+                "id": "40462188-3aa9-cdaf-8b1d-3ed8dfa57df9",
+                "value": "Scheduled Monument",
+                "__concept": null,
+                "__conceptId": "1e898077-9144-9ef0-b6e1-08f4e4881972"
+            },
+            "designation_names": {},
+            "designation_and_protection_timespan": {
+                "designation_start_date": "2016-01-14T00:00:00.000Z",
+                "recommended_designation_type": null
+            }
+        },
+        {
+            "designation_or_protection_type": {
+                "id": "b35829c8-a863-69f8-ad5b-4331660d8909",
+                "value": "Heritage at Risk",
+                "__concept": null,
+                "__conceptId": "7cb6d69f-cbcc-6688-c847-72b245362912"
+            },
+            "designation_names": {},
+            "designation_and_protection_timespan": {},
+            "extent_of_designation_or_protection": []
+        }
+    ],
+    "category_type": {
+        "id": "52353731-b0ac-48b6-b1e7-2ccb98833397",
+        "selected": false,
+        "text": {
+            "en": "Standing Buildings"
+        }
+    },
+    "characterization": null,
+    "display_name": "ANT 002:003: Dunluce Castle, Dunluce",
+    "monument_type_n1": {
+        "id": "5a94b08c-6687-bab1-1751-49ad2f269d9c",
+        "value": "Fortification",
+        "__concept": null,
+        "__conceptId": "e48f79b1-a175-a455-9443-b8fe9f46267f"
+    },
+    "historical_period_type": null,
+    "condition_description": {
+        "condition": "Refer to table below"
+    },
+    "sign_off": {
+        "references": {},
+        "gar_approved_by": {},
+        "input_by": {},
+        "gar_approved_date": {},
+        "input_date": {}
+    },
+    "heritage_asset_references": {
+        "smr_number": "ANT 002:003"
+    },
+    "condition_type": {
+        "id": "61908388-0c04-4be3-8367-9f7046951a54",
+        "selected": false,
+        "text": {
+            "en": "SUBSTANTIAL REMAINS (Vast majority definable)"
+        }
+    },
+    "images": [],
+    "monument_names": [
+        {
+            "monument_name": "Dunluce Castle, Dunluce",
+            "monument_name_use_type": {
+                "id": "2df285fa-9cf2-45e7-bc05-a67b7d7ddc2f",
+                "value": "Primary",
+                "__concept": null,
+                "__conceptId": "d4e3d550-6e2d-4734-88d4-3e781118048d"
+            }
+        },
+        {
+            "monument_name": "Multi-Period Castle - C15Th-Post-Medieval - With Rock-Cut Souterrain: Dunluce Castle",
+            "monument_name_use_type": {
+                "id": "e9170ee3-3455-4ec3-b596-475c0969f3bf",
+                "value": "Alternative",
+                "__concept": null,
+                "__conceptId": "f2a2710a-5a81-435a-9f2f-4eeddcdcd4af"
+            }
+        }
+    ],
+    "construction_phases": [
+        {
+            "phase_classification": {
+                "monument_type": null,
+                "phase_classification_description": {}
+            },
+            "construction_phase_timespan": {}
+        }
+    ],
+    "location_data": {
+        "national_grid_references": {
+            "irish_grid_reference_tm65_": "C9046041370"
+        },
+        "council": {
+            "id": "c1fda31a-5fcc-45f4-b73c-75db4555284b",
+            "selected": false,
+            "text": {
+                "en": "LA01 - Causeway Coast and Glens Borough Council"
+            }
+        },
+        "localities_administrative_areas": [
+            {
+                "area_type": {
+                    "id": "905f0c3b-c12e-963a-af7c-2463c35ba90f",
+                    "value": "Parish",
+                    "__concept": null,
+                    "__conceptId": "2f88e8b7-3d99-188a-39ec-b3798e785294"
+                },
+                "area_names": {
+                    "area_name": {
+                        "id": "933b667a-4c0d-a90c-c35e-169bb453aa9c",
+                        "value": "Dunluce",
+                        "__concept": null,
+                        "__conceptId": "c14558bf-a24b-f700-9ad8-06c83b803c9e"
+                    }
+                }
+            },
+            {
+                "area_type": {
+                    "id": "0e7653a1-5b47-5c32-8e64-edab8ff370f6",
+                    "value": "Barony",
+                    "__concept": null,
+                    "__conceptId": "abab2708-50f8-0c11-8ebd-8bc98ef6f6f1"
+                },
+                "area_names": {
+                    "area_name": {
+                        "id": "888b9530-dc4a-119b-12bf-7861e317ed42",
+                        "value": "Dunluce Lower",
+                        "__concept": null,
+                        "__conceptId": "1c3ad1aa-d569-214e-966a-f99205917910"
+                    }
+                }
+            }
+        ],
+        "geometry": {
+            "geospatial_coordinates": {
+                "type": "FeatureCollection",
+                "features": [
+                    {
+                        "type": "Feature",
+                        "geometry": {
+                            "type": "Point",
+                            "coordinates": [
+                                -6.579716,
+                                55.211106
+                            ]
+                        }
+                    }
+                ]
+            },
+            "feature_shape": {
+                "id": "a69227e9-15fc-4336-a0bb-fe85302708fd",
+                "value": "Point",
+                "__concept": null,
+                "__conceptId": "91aa5853-4315-4eb3-b52b-c4bda21c2ca1"
+            },
+            "spatial_metadata_descriptions": {},
+            "current_base_map": {}
+        },
+        "addresses": [
+            {
+                "town_or_city": {},
+                "building_number": {},
+                "street": {},
+                "postcode": {},
+                "sub_street_": {},
+                "building_name": {},
+                "county": {},
+                "locality": {},
+                "building_number_sub_street": {},
+                "townlands": {
+                    "townland": null
+                }
+            }
+        ],
+        "location_descriptions": [
+            {
+                "location_description": "Altitude: nan\nTownlands: Dunluce\nType: Fortification\nPeriod: ['Post-medieval', ' Medieval', ' Late Medieval', ' Early Christianity']"
+            }
+        ],
+        "area_assignments": {}
+    },
+    "associated_actors": [],
+    "use_phase": [],
+    "descriptions": [
+        {
+            "description": "Dun name and souterrain suggest Early Christian period occupation on the headland. Despite C13th and C14th records of a Medieval manor at Dunluce, architectural and documentary evidence suggest a construction date of c.1500 for the earliest parts of the castle on the rock promontory by the MacQuillan family. The NE & SE towers along with elements of the curtain and gatehouse date to this phase. Taken by the MacDonnells in the 1550s, who initiated several phases of expansion and remodelling during the late C16th, notably including the Scottish style gatehouse and loggia. Besieged and captured by Lord Deputy Perrot in 1584, but returned to MacDonnell hands the following year. The castle expanded onto the mainland with the construction of the Outer Ward at the outset of the C17th during a major phase of modernisation and gentrification by the MacDonnells. This included the establishment of a planned settlement in the lands around the castle in 1608 and construction of the Manor House. Formal terraced gardens were created immediately W of the Outer Ward in the 1620s/30s. Seized by Munro in 1642 and subsequently despoiled and finally abandoned by the end of the century. See SM7 for detailed description, plans, photos etc.",
+            "description_type": {
+                "id": "8b592b30-9002-4940-92fa-ad73a1d19703",
+                "selected": false,
+                "text": {
+                    "en": "Summary"
+                }
+            }
+        },
+        {
+            "description": "Complete",
+            "description_type": {
+                "id": "219c6377-d9d9-47b3-bea3-269aca0075d4",
+                "selected": false,
+                "text": {
+                    "en": "Notes"
+                }
+            }
+        }
+    ],
+    "record_and_registry_membership": [
+        {
+            "record_or_registry": {
+                "id": "93741c87-8287-473b-3e5f-06b53e3a3474",
+                "type": "Registry",
+                "graphId": "3a6ce8b9-0357-4a72-b9a9-d8fdced04360",
+                "title": "Sites and Monuments Record",
+                "root": null,
+                "meta": {
+                    "title": "Sites and Monuments Record",
+                    "slug": "REG_SMR",
+                    "type": "Registry"
+                }
+            }
+        }
+    ],
+                 </code></pre>
+            </section>
+        </section>
+        <section>
+            <h2>Plans</h2>
+            <ul>
+                <li>Finalise the public viewer alpha release (late 2026)</li>
+                <li>Put the public viewer for public consultation (early 2027)</li>
+                <li>Integrate the viewer with other sources (early-mid 2027)</li>
+              </ul>
+        </section>
+        <section>
+            <h2>THANKS!</h2>
+            <p>john.murphy3@communities-ni.gov.uk</p>
+            <p>A link to these slides can be found at ...</p>
+        </section>
+      </div>
+    </div>
 		<script src="dist/reveal.js"></script>
 		<script src="dist/plugin/notes.js"></script>
 		<script src="dist/plugin/markdown.js"></script>
