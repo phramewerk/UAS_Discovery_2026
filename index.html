@@ -19,7 +19,7 @@
 	<body>
      <div class="reveal">
       <div class="slides">
-        <section>
+        <section data-background-image="images/DFC_Background.webp">
           <h1>A New Public Database for the Historic Environment</h1>
           <p style="font-style:italic">John Murphy</p>
           <p style="font-size: 0.6em">Department for Communities, Historic Environment Division</p>
@@ -311,11 +311,10 @@
                 <li>Integrate the viewer with other sources (early-mid 2027)</li>
               </ul>
         </section>
-        <section>
-            <h2>THANKS!</h2>
-            <p>john.murphy3@communities-ni.gov.uk</p>
-            <p>A link to these slides can be found at</p>
-            <p>https://phramewerk.github.io/UAS_Discovery_2026/</p>
+        <section data-background-image="images/DFC_Background.webp">
+            <h2 align="left">THANKS!</h2>
+            <p align="left" style="font-style:italic">john.murphy3@communities-ni.gov.uk</p>
+            <p align="left" style="font-size:0.5em">A link to these slides can be found at https://phramewerk.github.io/UAS_Discovery_2026/</p>
         </section>
       </div>
     </div>
@@ -329,6 +328,7 @@
 			// - https://revealjs.com/config/
 			Reveal.initialize({
 				hash: true,
+                slideNumber: true, 
 
 				// Learn about plugins: https://revealjs.com/plugins/
 				plugins: [RevealMarkdown, RevealHighlight, RevealNotes],

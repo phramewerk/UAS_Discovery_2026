@@ -8,11 +8,11 @@
 @use 'sass:color';
 @use 'template/mixins' as mixins;
 
-$active-color: #42affa;
+$active-color: #FFD966;
 
 // Inject theme variables (with some overrides)
 @use 'template/settings' with (
-	$background-color: #8d71c8,
+	$background-color: #6643AD,
 
 	$main-font: "'Source Sans Pro', Helvetica, sans-serif",
 	$main-font-size: 40px,
